@@ -20,28 +20,20 @@ Run the 2D-Vortex-Advection example
 
 In order to verify your setup run the 2d_vortex_advection example with the following steps:
 
-1. Change into the dNami/exm/2d_vortex_advection directory, copy the two files genRhs.py and rhs.py to the src/generate directory:
-
-.. code-block:: sh
+1. Change into the dNami/exm/2d_vortex_advection directory, copy the two files genRhs.py and rhs.py to the src/generate directory::
 
     cp genRhs.py ../../src/generate
     cp rhs.py ../../src/generate
 
-2. Change into the src directory run the script:
+2. Change into the src directory run the script::
 
-.. code-block:: sh
+    ./install_clean.sh
 
-   ./install_clean.sh
+3. If your environment is setup correctly it should compile and build the dNami library. Add the dNami library to your path, from inside the src directory execute the command::
 
-3. If your environment is setup correctly it should compile and build the dNami library. Add the dNami library to your path, from inside the src directory execute the command:
+    source env_dNami.sh
 
-.. code-block:: sh
+4. Change to the dNami/exm/2d_vortex_advection/ directory and run the example with the following command::
 
-   source env_dNami.sh
-
-4. Change to the dNami/exm/2d_vortex_advection/ directory and run the example with the following command:
-
-.. code-block:: sh
-
-   mpirun -n 24 python3 compute.py
+    mpirun -n 24 python3 compute.py
 
