@@ -4,11 +4,15 @@
    contain the root `toctree` directive.
 
 Welcome to dNami's documentation!
-=================================
+*********************************
+
+dNami is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes. dNami uses MPI, OpenMP and cache blocking to speed up the calculation.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+
 
    usage/introduction
    usage/installation
